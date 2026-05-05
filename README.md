@@ -13,5 +13,9 @@ Place to `keys/private-key.pem`
 ```bash
 git config --global credential.https://github.com.helper $PWD/github-app-credential-helper.sh
 git config --global credential.https://github.com.useHttpPath true
+
+# Use HTTPS
+git config --global --add url."https://github.com/".insteadOf "git@github.com:"
+git config --global --add url."https://github.com/".insteadOf "ssh://git@github.com/"
 ```
 
